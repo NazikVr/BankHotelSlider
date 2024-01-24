@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding-top: 100px;
+}
+.container {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+/* #carouselExampleFade {
+    background-image: url(../image3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px) !important;
+} */
+
+#carouselExampleFade::before {
+    content: '';
+    position: absolute; /* Фиксируем на одном месте */
+    left: 0; right: 0; /* Вся ширин */
+    top: 0; bottom: 0; /* Вся высота */
+    z-index: -1; /* Фон ниже текста */
+    /* Параметры фона */
+    background: url(./bg.jpg) center / cover no-repeat;
+    filter: blur(5px); /* Размытие */
+   }
+
+.carousel-item {
+    margin: 0 auto;
+    width: 500px;
+    height: 700px;
+
+}
+
+.carousel-item img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-item p {
+    padding: 40px;
+    margin-top: 20px;
+    color: #000;
+    font-size: 24px;
+}
