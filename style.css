@@ -26,7 +26,7 @@ body {
     top: 0; bottom: 0; /* Вся высота */
     z-index: -1; /* Фон ниже текста */
     /* Параметры фона */
-    background: url(./bg.jpg) center / cover no-repeat;
+    background: url(./img/bg.jpg) center / cover no-repeat;
     filter: blur(5px); /* Размытие */
    }
 
