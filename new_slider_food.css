@@ -45,6 +45,9 @@ body {
 }
 
 .carousel-item p {
+    width: 100%;
+    text-align: justify;
+    font-weight: 700;
     padding: 40px;
     margin-top: 20px;
     color: #000;
